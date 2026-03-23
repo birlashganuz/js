@@ -1,58 +1,12 @@
-let str = 'Matndagi unli harflarni olib tashlash'
-let result = ''
+let str = "Matndagi unli harflarni olib tashlash";
+let result = "";
 for (let key of str) {
-    if (key != 'a' && key != 'o' && key != 'i' && key != 'u' && key != 'e') {
-        result = result + key
-    }
+  if (key != "a" && key != "o" && key != "i" && key != "u" && key != "e") {
+    result = result + key;
+  }
 }
 console.log(str);
 console.log(result);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // let str = "Matndagi unli harflarni sonini aniqlash va ularni o'chirib tashlash"
 // let s = 0
@@ -63,14 +17,12 @@ console.log(result);
 // }
 // // console.log(s);
 
-
 // let str1 = ''
 // for (let char of str) {
 //     if (char != 'a' && char != 'o' && char != 'u' && char != 'i' && char != 'e') {
 //         str1 = str1 + char
 //     }
 // }
-
 
 // while (str.indexOf('a')) {
 //     str = str.replace('a', '')
@@ -79,7 +31,6 @@ console.log(result);
 // alert(str.at(0))
 // str = str.replace('a', '')
 // alert(str)
-
 
 // for (let i = 0; i < str.length; i++) {
 //     const element = array[i];

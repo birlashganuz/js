@@ -9,17 +9,15 @@ function arr_info(str) {
         }
         if ((s / i) == array[i]) {
             b.push(array[i])
-            // console.log(i);
         }
         s = 0
     }
     return b
 }
 
-// const a = [9, 5, 7, 1, 8, 6, 6]
-
 let str = prompt('Jadval elementlarini kiriting', '9, 5, 7, 1, 8, 6, 6')
-console.log(arr_info(str));
+let result = arr_info(str)
+console.log(result);
 
 // const numbers = [1, 4, 9];
 // const roots = numbers.map(Math.sqrt);

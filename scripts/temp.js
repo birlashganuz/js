@@ -37,54 +37,51 @@
 // alert(a + b); // 12
 // alert((5 - (5 % 2)) / 2)
 
-
-
-
 // const randomProp = obj => Object.keys(obj)[(Math.random() * Object.keys(obj).length) | 0];
 const colors = {
-  aqua: '#00ffff',
-  azure: '#f0ffff',
-  beige: '#f5f5dc',
-  black: '#000000',
-  blue: '#0000ff',
-  brown: '#a52a2a',
-  cyan: '#00ffff',
-  darkblue: '#00008b',
-  darkcyan: '#008b8b',
-  darkgrey: '#a9a9a9',
-  darkgreen: '#006400',
-  darkkhaki: '#bdb76b',
-  darkmagenta: '#8b008b',
-  darkolivegreen: '#556b2f',
-  darkorange: '#ff8c00',
-  darkorchid: '#9932cc',
-  darkred: '#8b0000',
-  darksalmon: '#e9967a',
-  darkviolet: '#9400d3',
-  fuchsia: '#ff00ff',
-  gold: '#ffd700',
-  green: '#008000',
-  indigo: '#4b0082',
-  khaki: '#f0e68c',
-  lightblue: '#add8e6',
-  lightcyan: '#e0ffff',
-  lightgreen: '#90ee90',
-  lightgrey: '#d3d3d3',
-  lightpink: '#ffb6c1',
-  lightyellow: '#ffffe0',
-  lime: '#00ff00',
-  magenta: '#ff00ff',
-  maroon: '#800000',
-  navy: '#000080',
-  olive: '#808000',
-  orange: '#ffa500',
-  pink: '#ffc0cb',
-  purple: '#800080',
-  violet: '#800080',
-  red: '#ff0000',
-  silver: '#c0c0c0',
-  white: '#ffffff',
-  yellow: '#ffff00',
+  aqua: "#00ffff",
+  azure: "#f0ffff",
+  beige: "#f5f5dc",
+  black: "#000000",
+  blue: "#0000ff",
+  brown: "#a52a2a",
+  cyan: "#00ffff",
+  darkblue: "#00008b",
+  darkcyan: "#008b8b",
+  darkgrey: "#a9a9a9",
+  darkgreen: "#006400",
+  darkkhaki: "#bdb76b",
+  darkmagenta: "#8b008b",
+  darkolivegreen: "#556b2f",
+  darkorange: "#ff8c00",
+  darkorchid: "#9932cc",
+  darkred: "#8b0000",
+  darksalmon: "#e9967a",
+  darkviolet: "#9400d3",
+  fuchsia: "#ff00ff",
+  gold: "#ffd700",
+  green: "#008000",
+  indigo: "#4b0082",
+  khaki: "#f0e68c",
+  lightblue: "#add8e6",
+  lightcyan: "#e0ffff",
+  lightgreen: "#90ee90",
+  lightgrey: "#d3d3d3",
+  lightpink: "#ffb6c1",
+  lightyellow: "#ffffe0",
+  lime: "#00ff00",
+  magenta: "#ff00ff",
+  maroon: "#800000",
+  navy: "#000080",
+  olive: "#808000",
+  orange: "#ffa500",
+  pink: "#ffc0cb",
+  purple: "#800080",
+  violet: "#800080",
+  red: "#ff0000",
+  silver: "#c0c0c0",
+  white: "#ffffff",
+  yellow: "#ffff00",
 };
 // randomProp(colors)     // 'red'
 
@@ -113,7 +110,6 @@ const colors = {
 // console.log(Object.values(object1));
 // Expected output: Array ["somestring", 42, false]
 
-
 // var obj = { foo: "bar", baz: 42 };
 // console.log(Object.values(obj)); // ['bar', 42]
 
@@ -140,7 +136,6 @@ const colors = {
 // my_obj.foo = "bar";
 // console.log(Object.values(my_obj)); // ['bar']
 
-
 // Аргумент, не являющийся объектом, будет приведён к объекту
 // console.log(Object.values("foo")); // ['f', 'o', 'o']
 
@@ -148,7 +143,6 @@ const colors = {
 // const world = hello.substring(7, 10); // с 7-го по 10-й индекс
 // console.log(world);
 // console.log('mahalla'.lastIndexOf('a', 4));
-
 
 // for (const key in object) {
 //     if (Object.hasOwnProperty.call(object, key)) {
@@ -158,9 +152,6 @@ const colors = {
 //     }
 //     console.log(object[key]);
 // }
-
-
-
 
 // // alert('a' in a)
 
@@ -179,16 +170,14 @@ const colors = {
 //   }
 // console.log(isSymbolLetter(a));
 
-
 // function isSymbolLetter(array) {
-//     return array.map(str => { return { 
+//     return array.map(str => { return {
 //       letters: str.toLowerCase().split('').filter(a => a >= 'a' && a <= 'z').length
 //     }; });
 //   }
 
 //   let data = ["u\Z%Cm@kc|", "6kmpNvMqQK", "THbw%}\_2L", "}QVMQbik@'", "g}7P5+:?>f"];
 //   console.log(isSymbolLetter(data));
-
 
 // let str='asds!ds!!!'
 // let count=str.match(/[!]/g).length
@@ -224,7 +213,6 @@ const colors = {
 
 // let count_key = str.match(/!/g).length
 
-
 // const set1 = new Set();
 // set1.add({ x: 10, y: 20 }).add({ x: 20, y: 30 });
 
@@ -249,53 +237,57 @@ const colors = {
 
 // console.log(result);
 
-
 function union_num() {
-  const a = [9, 1, 5, 5, 3, 5, 6]
+  const a = [9, 1, 5, 5, 3, 5, 6];
   for (let i = 0; i < array.length; i++) {
-    let s = 0
+    let s = 0;
     for (let j = 0; j < array.length; j++) {
       if (i != j) {
-        if (a[i] == a[j]) { s++ }
+        if (a[i] == a[j]) {
+          s++;
+        }
       }
     }
-    if (s == 0) { console.log(a[i]) }
+    if (s == 0) {
+      console.log(a[i]);
+    }
   }
-
 }
 
-
 function drawStairs(n) {
-  let a = []
+  let a = [];
   for (let i = 0; i < n; i++) {
-    a[i] = ' '.repeat(i) + 'I\n'
+    a[i] = " ".repeat(i) + "I\n";
   }
-  return a.join('\n')
+  return a.join("\n");
 
   let result = [];
 
   for (let i = 0; i < n; i++) {
-    result[i] = `${' '.repeat(i)}I`;
+    result[i] = `${" ".repeat(i)}I`;
   }
 
-  return result.join('\n');
+  return result.join("\n");
 }
 
 // drawStairs(2)
 
 console.log(drawStairs(2));
 
-
 function findUniq(arr) {
-  for (let i = 0; i < arr.length-1; i++) {
-    let s = 0
+  for (let i = 0; i < arr.length - 1; i++) {
+    let s = 0;
     for (let j = 0; j < arr.length; j++) {
       if (i != j) {
-        if (arr[i] == arr[j]) { s++ }
+        if (arr[i] == arr[j]) {
+          s++;
+        }
       }
     }
-    if (s == 0) { console.log(arr[i]) }
+    if (s == 0) {
+      console.log(arr[i]);
+    }
   }
 }
 
-findUniq([1, 0, 0])
+findUniq([1, 0, 0]);

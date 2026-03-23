@@ -1,14 +1,14 @@
-let a = +prompt('Ixtiyoriy natural son kiriting: ')
+let a = +prompt("Ixtiyoriy natural son kiriting: ");
 while (isNaN(a) || a == 0) {
-    a = +prompt('Masala shartiga mos son kiririting: ')
+  a = +prompt("Masala shartiga mos son kiririting: ");
 }
-let n = +prompt('Ixtiyoriy natural son kiriting: ')
+let n = +prompt("Ixtiyoriy natural son kiriting: ");
 while (isNaN(n)) {
-    n = +prompt('Masala shartiga mos son kiririting: ')
+  n = +prompt("Masala shartiga mos son kiririting: ");
 }
 
-let p = 1
+let p = 1;
 for (let i = 0; i < n; i++) {
-    p *= a;
+  p *= a;
 }
-alert('a ning n-darajasi: ' + p)
+alert("a ning n-darajasi: " + p);
